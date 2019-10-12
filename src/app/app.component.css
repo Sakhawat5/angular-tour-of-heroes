@@ -26,3 +26,10 @@ nav a:hover {
 nav a.active {
   color: #039be5;
 }
+
+.content-style{
+  border: 1px solid;
+  align-content: center;
+  margin: 0 auto;
+  width: 960px;
+}
