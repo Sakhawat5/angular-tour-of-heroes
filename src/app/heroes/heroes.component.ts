@@ -12,9 +12,10 @@ export class HeroesComponent implements OnInit {
 
   //hero = 'Windstorm';
 
-  heroes = HEROES;
+  //heroes = HEROES;
 
-  // heroes: Hero[];
+  heroes: Hero[];
+
 
   // hero: Hero = {
   //   id: 1,
@@ -40,10 +41,9 @@ export class HeroesComponent implements OnInit {
         .subscribe(heroes => this.heroes = heroes);
   }
   
-
-  
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
+ 
 
 }

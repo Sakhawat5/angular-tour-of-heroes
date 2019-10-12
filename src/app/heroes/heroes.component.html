@@ -29,9 +29,8 @@
     </div>
   </div> -->
 
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-sm-4 col order-last">
-      <!-- <h2>Hero Detail</h2> -->
       <h2>My Heroes</h2>
       <ul class="heroes">
         <li *ngFor="let hero of heroes"
@@ -46,7 +45,16 @@
     <div class="col-sm-8 col order-first">
         <app-hero-detail [hero] = "selectedHero"></app-hero-detail>
     </div>
-  </div>
+  </div> -->
+  
+  <h2>My Heroes</h2>
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </a>
+    </li>
+  </ul>
 
 </div>
 
